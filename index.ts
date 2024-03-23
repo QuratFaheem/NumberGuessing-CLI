@@ -4,6 +4,7 @@ import inquirer from 'inquirer';
 import chalk from "chalk";
 
 const randomNumber=Math.floor(Math.random() * 10  + 1 );
+console.log(chalk.bgBlueBright("WELCOME TO MY NUMBER GUESSING GAME ON CLI"));
 const answers= await inquirer.prompt([{
     name: "userGuessNumber",
     type: "number",
